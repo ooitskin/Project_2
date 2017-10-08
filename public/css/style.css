@@ -2,7 +2,7 @@ body {
   background-color: blanchedalmond;
   margin: 0 auto;
   text-align: center;
-  margin-top: 50px;  
+  margin-top: 30px;  
   font-family: 'Alegreya', serif;
 }
 
@@ -13,15 +13,25 @@ img {
   display: inline-block;
 }
 
+a {
+  text-decoration: none;
+}
+
+#logout-button {
+  border: 2px solid black;
+}
+
+#submit {
+  width: 70px;
+  margin-top: 20px;
+}
+
 #text-center {
   margin-top: 50px;
   font-family: 'Pacifico', cursive;
   font-size: 70px;
 }
 
-a {
-  text-decoration: none;
-}
 
 #listimages {
   display: inline-block;

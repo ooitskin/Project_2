@@ -14,11 +14,14 @@
 <body>
 	<main>
 		<div>
-			<h1>Welcome to your profile! {{ user.email }}!</h1>
+			<a href="/users/logout" id='logout-button'>Log out</a>
+			<br>
+			<h1>Welcome to theVisions! {{ user.email }}!</h1>
+
+
 			<h1>Let's start uploading images!</h1>
 
 			<div>
-				<a href="/users/logout" id='logout-button'>Log out</a>
 				<h4>Enter an ImageURL below and Click Submit to render its image and text!</h4>
 			</div>
 		</div>
@@ -46,7 +49,7 @@
 						<input type='button' value='Delete' class='delete' data-id='delete-id'></input>
 					</section>
 				</div>
-				
+
 				{{ /Images }}
 			</div>
 		</section>

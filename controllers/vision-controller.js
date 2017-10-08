@@ -58,9 +58,8 @@ router.get('/users/profile2/:id',
 router.delete('/users/profile2/:id',
   Images.delete,
   (req, res) => {
-    // res.json(res.locals.deleteImages);
+    res.json(res.locals.deleteImages);
     // res.send('deleted')
-    res.send('hello')
   });
 
 module.exports = router;

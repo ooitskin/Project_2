@@ -52,7 +52,7 @@ $(() => {
       data: deleted,
       success: data => {
         console.log('deleted data', data);
-        window.location.replace('/users/profile2')
+        window.location.replace('/users/profile')
 
       },
       error: err => console.log(err)
