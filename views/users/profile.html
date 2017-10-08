@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Profile</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+	<script src="/js/jquery.js"></script>
+	<script src="/js/script.js"></script>
+</head>
+
+<body>
+	<main>
+		<div>
+			<h1>Welcome to your profile! {{ user.email }}!</h1>
+			<h1>Let's start uploading images!</h1>
+
+			<div>
+				<a href="/users/logout" id='logout-button'>Log out</a>
+				<h4>Enter an ImageURL below and Click Submit to render its image and text!</h4>
+			</div>
+		</div>
+		<section>
+			<form id='myform' action=''>
+				<input id='myurl' placeholder="Enter Image URL" />
+				<input type='submit'>
+			</form>
+			<div id='rendertext'></div>
+			<div id='saved'></div>
+		</section>
+
+		<section>
+			<div>
+				<button id='save'>Save</button>
+				<h4>Click 'Save' to save the imageURL to the database!</h4>
+
+				<h4>List of Images</h4>
+				{{ #Images }}
+				<div id='listimages' data-id={{id}}>
+					<section>
+						<img src='{{ image }}'>
+						<br>
+						<div class="delete-image"></div>
+						<input type='button' value='Delete' class='delete' data-id='delete-id'></input>
+					</section>
+				</div>
+				
+				{{ /Images }}
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>

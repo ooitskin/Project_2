@@ -1,0 +1,35 @@
+body {
+  background-color: blanchedalmond;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;  
+  font-family: 'Alegreya', serif;
+}
+
+img {
+  height: 400px;
+  width: 300px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+#text-center {
+  margin-top: 50px;
+  font-family: 'Pacifico', cursive;
+  font-size: 70px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#listimages {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  /* width: 500px; */
+}
+
+#logout-button {
+  float: right;
+}
