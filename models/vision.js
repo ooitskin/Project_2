@@ -33,7 +33,7 @@ Images.findAll = (req, res, next) => {
 };
 
 Images.findById = (req, res, next) => {
-  const id = parseInt(req.params.id);
+  const { id } = parseInt(req.params);
   db.one(
     `SELECT * FROM funnyimages WHERE id = $1`, [id]
   ).then((data) => {
@@ -65,7 +65,7 @@ Images.save = (req, res, next) => {
 };
 
 Images.delete = (req, res, next) => {
-  const id = parseInt(req.params.id);
+  const  { id } = parseInt(req.params);
   db.none(
     `DELETE FROM funnyimages WHERE id = $1`, [id])
     .then((result) => {

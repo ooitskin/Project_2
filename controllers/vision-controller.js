@@ -47,15 +47,17 @@ router.post('/users/profile', (req, res) => {
 
 
 router.get('/users/profile2/:id',
+  // Images.findById,
   Images.delete,
   (req, res) => {
-    // res.render('users/profile')
+    res.render('users/profile')
     // console.log(Images.delete)
-    res.send('I deleted it')
+    // res.send('I deleted it')
   }
 )
 
 router.delete('/users/profile2/:id',
+  // Images.findById,
   Images.delete,
   (req, res) => {
     res.json(res.locals.deleteImages);
