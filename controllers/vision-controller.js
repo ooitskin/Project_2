@@ -47,21 +47,36 @@ router.post('/users/profile', (req, res) => {
 
 
 router.get('/users/profile2/:id',
-  // Images.findById,
+  Images.findById,
   Images.delete,
   (req, res) => {
-    res.render('users/profile')
-    // console.log(Images.delete)
-    // res.send('I deleted it')
+    res.render('users/profile2')
   }
-)
+);
 
-router.delete('/users/profile2/:id',
-  // Images.findById,
-  Images.delete,
-  (req, res) => {
-    res.json(res.locals.deleteImages);
-    // res.send('deleted')
-  });
+// router.delete('/users/profile2/:id',
+
+//   Images.findById,
+//   Images.delete,
+//   (req, res) => {
+//     console.log('in the delete')
+
+//     // res.json(res.locals.deleteImages);
+//     res.send('deleted')
+//   });
+
+router.delete('/users/profile2/:id', (req, res, next) => {
+  db.none(
+    'DELETE FROM funnyimages WHERE id = $1', [req.params.id])
+    .then((result) => {
+      // res.locals.deleteImages;
+      res.status(200)
+        .json({
+          status: 'success'
+        })
+      // next();
+    })
+    .catch(err => console.log(err));
+});
 
 module.exports = router;

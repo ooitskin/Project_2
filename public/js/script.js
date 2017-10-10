@@ -36,25 +36,15 @@ $(() => {
 
   $('.delete').on('click', e => {
     e.preventDefault();
-    console.log('delete click');
-
-    // const url = $("#myurl").val();
-    // const deleted = {};
-    // deleted['image'] = url;
-
     const deleted = {};
-    deleted.id = $('.delete').attr('delete-id');
-    console.log('deleted data 1', deleted)
-    
-    $.ajax('/users/profile2/:id', {
+    deleted.id = $(event.target).data().id
+    console.log(deleted.id)
+    $.ajax(`/users/profile2/${deleted.id}`, {
       method: 'DELETE',
       data: deleted,
       success: data => {
-        console.log('deleted data', data);
-        // window.location.replace('/users/profile')
-        
-
-
+        console.log('deleted func data', data);
+        window.location.replace('/users/profile');
       },
       error: err => console.log(err)
     })

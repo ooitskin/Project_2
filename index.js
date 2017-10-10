@@ -7,17 +7,7 @@ const mustacheExpress = require('mustache-express');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const mocha = require('mocha');
-
-// const vision = require('@google-cloud/vision');
-
-// const config = {
-//   projectId = 'ascendant-pixel-181913',
-//   keyFilename: './My First Project-4794867acf53.json'
-// };
-
-// const datastore = require('@google-cloud/datastore');
-// const storage = require('@google-cloud/storage');
+const volleyball = require('volleyball');
 
 const visionController = require('./controllers/vision-controller');
 const usersController = require('./controllers/users-controller');
@@ -44,6 +34,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(logger('dev'));
+app.use(volleyball);
 
 app.get('/', (req, res) => {
   res.render('index');
