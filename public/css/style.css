@@ -21,13 +21,42 @@ a {
   text-decoration: none;
 }
 
-#logout-button {
-  border: 2px solid black;
+.delete {
+  width: 70px;  
 }
+
+.delete:hover {
+  background: rgb(63, 134, 241);
+}
+
+#rendertext {
+  font-size: 23px;
+}
+
+#myurl {
+  width: 200px;
+  height: 20px;
+}
+
+/* #header {
+  font-family: 'Bad Script', cursive;
+} */
 
 #submit {
   width: 70px;
   margin-top: 20px;
+}
+
+#submit:hover {
+  background: rgb(63, 134, 241);  
+}
+
+#save {
+  width: 70px;  
+}
+
+#save:hover {
+  background: rgb(63, 134, 241);  
 }
 
 #text-center {
@@ -36,12 +65,15 @@ a {
   font-size: 70px;
 }
 
-
 #listimages {
   display: inline-block;
   text-align: center;
   margin: 0 auto;
   /* width: 500px; */
+}
+
+#logout-button {
+  border: 2px solid black;
 }
 
 #logout-button {

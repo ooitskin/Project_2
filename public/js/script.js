@@ -30,6 +30,7 @@ $(() => {
       data: data,
       success: response => {
         $(`<div>${response}</div>`).appendTo('#saved');
+        window.location.replace('/users/profile');        
       }
     })
   });

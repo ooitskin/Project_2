@@ -15,7 +15,7 @@ Link to API:
 https://cloud.google.com/vision/
 
 Approach:<br>
-First thing I did was to make sure my API was working. At the beginning of this project, GoogleVision did have some problems with the API, and couldn't get an API Key. But, it's google. So it was solved the next day. <br>
+First thing I did was to make sure my API was working. At the beginning of this project, GoogleVision did have some problems with the API, and couldn't get an API Key. But, it's google. So it was solved the next day. <br> 
 I used Postman to make sure that I got the information that I wanted. And then started to build the app from there. <br>
 I finished the Authentication part of the project as my first assignment. Then wrote the code to render the text from an image. Once I got that, I went on to work on CRUD applications.<br>
 Initially I stated that I was going to incorporate Mocha into the project, but I wasn't sure how to use it. Instead, I used a NPM called Volleyball. Which is similar to Morgan.

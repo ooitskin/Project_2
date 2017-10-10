@@ -16,8 +16,7 @@
 		<div>
 			<a href="/users/logout" id='logout-button'>Log out</a>
 			<br>
-			<h1>Welcome to theVisions! {{ user.email }}!</h1>
-
+			<h1 id='header'>Welcome to theVisions! {{ user.email }}</h1>
 
 			<h1>Let's start uploading images!</h1>
 
@@ -28,7 +27,7 @@
 		<section>
 			<form id='myform' action=''>
 				<input id='myurl' placeholder="Enter Image URL" />
-				<input type='submit'>
+				<input id='submit' type='submit'>
 			</form>
 			<div id='rendertext'></div>
 			<div id='saved'></div>
@@ -39,7 +38,7 @@
 				<button id='save'>Save</button>
 				<h4>Click 'Save' to save the imageURL to the database!</h4>
 
-				<h4>List of Images</h4>
+				<h3>Saved Images</h3>
 				{{ #Images }}
 				<div id='listimages' data-id={{id}}>
 					<section>
