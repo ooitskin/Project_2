@@ -13,9 +13,9 @@ CREATE TABLE funnyimages (
 );
 
 INSERT INTO funnyimages 
-  (image) 
+  (image, user_id) 
 VALUES 
-('https://img.buzzfeed.com/buzzfeed-static/static/enhanced/web04/2011/9/6/15/enhanced-buzz-27690-1315338948-58.jpg?downsize=715:*&output-format=auto&output-quality=auto'),
-('https://nationalmarker.com/upload/products/SPD442RB.jpg'),
-('https://img.buzzfeed.com/buzzfeed-static/static/enhanced/web05/2011/9/6/15/enhanced-buzz-18847-1315339061-20.jpg?downsize=715:*&output-format=auto&output-quality=auto'),
-('https://img.buzzfeed.com/buzzfeed-static/static/enhanced/web04/2011/9/6/15/enhanced-buzz-27712-1315339076-59.jpg?downsize=715:*&output-format=auto&output-quality=auto');
+('https://img.buzzfeed.com/buzzfeed-static/static/enhanced/web04/2011/9/6/15/enhanced-buzz-27690-1315338948-58.jpg?downsize=715:*&output-format=auto&output-quality=auto',1),
+('https://nationalmarker.com/upload/products/SPD442RB.jpg',1),
+('https://img.buzzfeed.com/buzzfeed-static/static/enhanced/web05/2011/9/6/15/enhanced-buzz-18847-1315339061-20.jpg?downsize=715:*&output-format=auto&output-quality=auto',1),
+('https://img.buzzfeed.com/buzzfeed-static/static/enhanced/web04/2011/9/6/15/enhanced-buzz-27712-1315339076-59.jpg?downsize=715:*&output-format=auto&output-quality=auto',1);
