@@ -1,6 +1,6 @@
 # Project_2
 
-Name of app: theVisions
+<h2>Name of app: theVisions</h2>
 
 Description: <br>
 The user has to sign up before using the app. After signing up, the user has access to the app.
@@ -18,13 +18,13 @@ Approach:<br>
 First thing I did was to make sure my API was working. At the beginning of this project, GoogleVision did have some problems with the API, and couldn't get an API Key. But, it's google. So it was solved the next day. <br> 
 I used Postman to make sure that I got the information that I wanted. And then started to build the app from there. <br>
 I finished the Authentication part of the project as my first assignment. Then wrote the code to render the text from an image. Once I got that, I went on to work on CRUD applications.<br>
-Initially I stated that I was going to incorporate Mocha into the project, but I wasn't sure how to use it. Instead, I used a NPM called Volleyball. Which is similar to Morgan.
+Initially I stated that I was going to incorporate Mocha into the project, but I wasn't sure how to use it. Instead, I used a NPM called Volleyball. Which is similar to Morgan.<br>
 Link to NPM:
 <br>
 https://www.npmjs.com/package/volleyball
 
 
-Unsolved:
+Unsolved:<br>
 Did not implement an 'Update' feature due to the fact that this app is based on links and it would be easier to find another image URL rather than updating one.<br>
 Was not able to implement cookies correctly, Images does not save to a specific user.<br>
 Was not able to implement translation feature.
